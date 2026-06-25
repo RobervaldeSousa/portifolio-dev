@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import About from './components/About';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
+import PortfolioQRCode from './components/PortfolioQRCode';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Projects />
         <Skills />
         <Footer />
+        <PortfolioQRCode />
       </main>
     </div>
   );
