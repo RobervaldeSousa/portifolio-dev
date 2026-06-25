@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion'; // Importando o motor de animação
 import { ExternalLink, Code2 } from 'lucide-react';
 import RickMorty from '../assets/rick-and-morty-bg.jpg';
+import PertoDaki from '../assets/app-pertodaki.png';
 
 const Projects = () => {
   const projects = [
@@ -11,18 +12,18 @@ const Projects = () => {
       title: "Memory Game",
       description: "Jogo de memória desenvolvido para praticar lógica de estados complexos e efeitos de rotação 3D com tailwind.",
       tech: ["JavaScript", "React", "Tailwind CSS"],
-      github: "https://jogo-da-mem-ria-alpha.vercel.app/",
-      demo: "#",
+      github: "https://github.com/RobervaldeSousa/Jogo-da-mem-ria/",
+      demo: "https://jogo-da-mem-ria-alpha.vercel.app/",
       image: RickMorty
     },
     {
       id: 2,
-      title: "Em breve",
+      title: "Trabalhando nisso!",
       description: "MVP de uma plataforma que conecta profissionais locais a clientes. Foco em geolocalização e arquitetura escalável.",
       tech: ["React", "Tailwind", "Node.js", "Firebase"],
       github: "#",
       demo: "#",
-      image: "https://via.placeholder.com/600x400/1e293b/fff?text=Memory+Game" 
+      image: PertoDaki 
     },
     {
       id: 3,
@@ -93,10 +94,10 @@ const Projects = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-slate-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                  <a href={project.github} className="p-2 bg-slate-800 rounded-full text-white hover:text-cyan-400 transition transform hover:scale-110">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-full text-white hover:text-cyan-400 transition transform hover:scale-110">
                     <ExternalLink size={20} />
                   </a>
-                  <a href={project.demo} className="p-2 bg-slate-800 rounded-full text-white hover:text-cyan-400 transition transform hover:scale-110">
+                  <a href={project.demo} target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-full text-white hover:text-cyan-400 transition transform hover:scale-110">
                     <ExternalLink size={20} />
                   </a>
                 </div>
@@ -118,7 +119,7 @@ const Projects = () => {
                 </div>
 
                 <div className="flex justify-between items-center">
-                  <a href={project.demo} className="text-white text-sm font-semibold flex items-center gap-2 hover:text-cyan-400 transition group-hover:translate-x-1 duration-300">
+                  <a href={project.demo} target="_blank" rel="noopener noreferrer" className="text-white text-sm font-semibold flex items-center gap-2 hover:text-cyan-400 transition group-hover:translate-x-1 duration-300">
                     Explorar Projeto <ExternalLink size={16} />
                   </a>
                 </div>

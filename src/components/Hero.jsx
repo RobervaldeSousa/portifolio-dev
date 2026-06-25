@@ -32,8 +32,8 @@ const Hero = () => {
 
       {/* Botão Download CV (Secundário/Outlined) */}
       <motion.a
-        href="/seu-cv.pdf"
-        download="Meu_Curriculo.pdf"
+        href="/curriculo.pdf"
+        download="Roberval_Sousa_CV.pdf"
         target="_blank" rel="noopener noreferrer"
         whileHover={{ 
           y: -5, 
