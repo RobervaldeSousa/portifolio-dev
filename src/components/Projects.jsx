@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'; // Importando o motor de animação
 import { ExternalLink, Code2 } from 'lucide-react';
 import RickMorty from '../assets/rick-and-morty-bg.jpg';
 import PertoDaki from '../assets/app-pertodaki.png';
+import { FaGithub } from 'react-icons/fa';
 
 const Projects = () => {
   const projects = [
@@ -94,10 +95,10 @@ const Projects = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-slate-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-full text-white hover:text-cyan-400 transition transform hover:scale-110">
-                    <ExternalLink size={20} />
+                  <a href={project.github} title="Repositório" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-full text-white hover:text-cyan-400 transition transform hover:scale-110">
+                    <FaGithub size={20} />
                   </a>
-                  <a href={project.demo} target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-full text-white hover:text-cyan-400 transition transform hover:scale-110">
+                  <a href={project.demo} title="Demo" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-full text-white hover:text-cyan-400 transition transform hover:scale-110">
                     <ExternalLink size={20} />
                   </a>
                 </div>

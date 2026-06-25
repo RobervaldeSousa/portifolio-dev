@@ -16,7 +16,6 @@ const Hero = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-10">
       
-      {/* Botão Ver Projetos (Primário) */}
       <motion.a
         href="#projects"
         whileHover={{ 
@@ -30,7 +29,6 @@ const Hero = () => {
         <ChevronRight size={20} />
       </motion.a>
 
-      {/* Botão Download CV (Secundário/Outlined) */}
       <motion.a
         href="/curriculo.pdf"
         download="Roberval_Sousa_CV.pdf"
